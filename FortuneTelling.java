@@ -10,16 +10,18 @@ public class FortuneTelling{
         int month = sc.nextInt();
         System.out.println("誕生日の「日にち」を半角数字で入力してください");
         int date = sc.nextInt();
+        GetSignLogic gsl = new GetSignLogic();
+        System.out.println(gsl.getSign(month, date));
         
 
         // 入力された日付から誕生日を生成
-        MakeDate md = new MakeDate();
-        MonthDay birthday = md.makeDate(month, date);
+        // MakeDate md = new MakeDate();
+        // MonthDay birthday = md.makeDate(month, date);
         
         // DAOにアクセスして星座を取得
-        SignDAO dao = new SignDAO();
-        String sign = dao.execute(birthday);
-        System.out.println(sign);
+        // SignDAO dao = new SignDAO();
+        // String sign = dao.execute(birthday);
+        // System.out.println(sign);
        
 
     }
