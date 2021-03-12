@@ -1,4 +1,3 @@
-import java.time.MonthDay;
 import java.util.Scanner;
 
 public class FortuneTelling{
