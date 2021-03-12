@@ -13,7 +13,7 @@ public class GetFortuneResult {
         int d = today.getDayOfMonth();
         
         int indexOfSIGNS = SIGNS.indexOf(sign);
-        int resultNum = (y + m * d * (indexOfSIGNS + 1));
+        int resultNum = (y * m / d * (indexOfSIGNS + 1));
         return resultNum;
 
         
