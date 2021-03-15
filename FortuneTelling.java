@@ -20,7 +20,8 @@ public class FortuneTelling{
         // 受け取ったナンバーで運勢を取得
         FortuneResultDAO dao = new FortuneResultDAO();
         String result = dao.execute(resultNum);
-        System.out.println(result);
+        // 結果をコンソールに出力
+        System.out.println(month + "月" + date + "日生まれの" + sign + "のあなたの今日は「" + result + "」");
        
 
     }
