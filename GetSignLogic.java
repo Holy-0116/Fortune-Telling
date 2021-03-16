@@ -6,9 +6,11 @@ public class GetSignLogic {
     // 月末の日を1月から順番に並べた数字
     final int[] END_OF_MONTH = {31,29,31,30,31,30,31,31,30,31,30,31};
     
-    public String getSign(int month, int day){
+    public String getSign(int[] birthday){
 
         String sign ="";
+        int month = birthday[0];
+        int day = birthday[1];
 
         for(int i = 0; i < SIGNS.length; i++){
             if(month == i + 1){
