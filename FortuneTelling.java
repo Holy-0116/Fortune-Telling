@@ -11,11 +11,15 @@ public class FortuneTelling{
 
        
         // 受け取った星座で運勢を取得
-        FortuneResultDAO dao = new FortuneResultDAO();
-        String result = dao.execute(sign);
+        FortuneResultDAO fortuneDAO = new FortuneResultDAO();
+        String result = fortuneDAO.execute(sign);
 
+        // 受け取った星座でラッキーアイテムを取得
+        LuckyItemDAO itemDAO = new LuckyItemDAO();
+        String luckyItem = itemDAO.execute(sign);
+        System.out.println(luckyItem);
         // 結果をコンソールに出力
-        Message.create(birthday, sign, result);
+        Message.create(birthday, sign, result, luckyItem);
        
 
     }
