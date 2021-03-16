@@ -15,6 +15,10 @@ public class FortuneResultDAO{
     
         
     public String execute(String sign){
+            // 星座が適正か確認
+            if (SIGNS.contains(sign) == false){
+                return null;
+            }
             // 占い結果テキストの中身を格納する配列
             List<String> fortuneResult = new ArrayList<String>();
             // テキストの読み込みをして配列に格納
