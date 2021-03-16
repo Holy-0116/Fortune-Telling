@@ -1,3 +1,4 @@
+
 public class GetSignLogic {
     // 1月から順番に並べた星座
     final String[] SIGNS = {"やぎ座","みずがめ座","うお座","おひつじ座","おうし座","ふたご座","かに座","しし座","おとめ座","てんびん座","さそり座","いて座"};
@@ -23,7 +24,7 @@ public class GetSignLogic {
                 }
             }
         }
-        String err = "入力された値は不正です"; 
-        return err;   
+
+        return null;   
     }
 }
