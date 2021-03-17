@@ -1,3 +1,5 @@
+package root;
+
 
 public class GetSignLogic {
     // 1月から順番に並べた星座

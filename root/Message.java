@@ -1,3 +1,5 @@
+package root;
+
 public class Message {
     
     public static void create(int[] birthday, String sign, String result, String luckyItem){

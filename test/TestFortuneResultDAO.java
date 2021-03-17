@@ -1,3 +1,7 @@
+package test;
+
+import root.FortuneResultDAO;
+
 public class TestFortuneResultDAO {
     public static void main(String[] args) {
         // インスタンス生成
@@ -5,8 +9,8 @@ public class TestFortuneResultDAO {
         String sign;
         String result;
 
-        // 正常系
-        // 存在する星座を渡すと正常に占い結果が返ってくる
+        System.out.println("正常系");
+        System.out.println("存在する星座を渡すと正常に占い結果が返ってくる");
         sign = "やぎ座";
         result = dao.execute(sign);
         if(result != null){
@@ -15,8 +19,8 @@ public class TestFortuneResultDAO {
             System.out.println("NG");
         }
 
-        // 異常系
-        // 存在しない星座を渡すとnullが返ってくる
+        System.out.println("異常系");
+        System.out.println("存在しない星座を渡すとnullが返ってくる");
         sign = "test";
         result = dao.execute(sign);
         if(result == null){
@@ -24,7 +28,8 @@ public class TestFortuneResultDAO {
         } else {
             System.out.println("NG");
         }
-        // nullを渡すとnullが返ってくる
+
+        System.out.println("nullを渡すとnullが返ってくる");
         sign = null;
         result = dao.execute(sign);
         if(result == null){
