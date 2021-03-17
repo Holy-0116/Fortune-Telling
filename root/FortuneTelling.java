@@ -1,3 +1,5 @@
+package root;
+
 
 public class FortuneTelling{
     public static void main(String[] args){
